@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/idcombustivel"
+        android:checkable="false"
+        android:icon="@drawable/custocar"
+
+        android:title="Combustível"
+
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/idimprevisto"
+        android:icon="@drawable/custocar"
+        android:title="Imprevistos"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/idServicos"
+        android:icon="@drawable/custocar"
+        android:title="Serviços"
+
+        app:showAsAction="never" />
+
+</menu>

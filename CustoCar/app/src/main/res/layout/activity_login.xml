@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="br.com.custocar.custocar.LoginActivity"
+    >
+
+    <Button
+        android:id="@+id/button_entrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtcadastrar"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp"
+        android:background="@color/custocar"
+        android:text="Acessar"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextLogin"
+        android:layout_alignStart="@+id/editTextLogin"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="40dp"
+        android:text="Email"
+        android:textColor="@color/custocar" />
+
+    <EditText
+        android:id="@+id/editTextLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textViewSenha"
+        android:layout_alignStart="@+id/textViewSenha"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="exemplo@mail.com"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/custocar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextSenha"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Senha"
+        android:textColor="@color/custocar"
+        android:id="@+id/textViewSenha" />
+
+    <EditText
+        android:id="@+id/editTextSenha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="****"
+        android:inputType="textPassword"
+        android:textColor="@color/custocar"
+        android:layout_above="@+id/button_entrar"
+        android:layout_alignStart="@+id/textViewSenha" />
+
+    <TextView
+        android:id="@+id/txtcadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Cadastre-se!"
+        android:textSize="18sp"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/custocar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_above="@+id/textViewLogin"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

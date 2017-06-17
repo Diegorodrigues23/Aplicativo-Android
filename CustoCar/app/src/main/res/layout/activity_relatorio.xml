@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.custocar.custocar.RelatorioActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonGerarRelatorio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/custocar"
+        android:text="Gerar Relatório"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="374dp" />
+
+    <TextView
+        android:id="@+id/textViewCusto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/spinnerCusto"
+        android:layout_below="@+id/editTextDataFinal"
+        android:layout_marginTop="10dp"
+        android:text="Custo"
+        android:textColor="@color/custocar" />
+
+    <Spinner
+        android:id="@+id/spinnerCusto"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewCusto"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/custocar"/>
+
+    <TextView
+        android:id="@+id/textViewDataIncial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewCusto"
+        android:layout_below="@+id/toolbar5"
+        android:layout_marginTop="40dp"
+        android:text="Data Inicial"
+        android:textColor="@color/custocar"/>
+
+    <EditText
+        android:id="@+id/editTextDataIni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewDataIncial"
+        android:layout_below="@+id/textViewDataIncial"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/custocar"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonCalInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        app:srcCompat="@drawable/calendario"
+        android:layout_alignBottom="@+id/editTextDataIni"
+        android:layout_alignEnd="@+id/spinnerCusto" />
+
+    <TextView
+        android:id="@+id/textViewDataFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextDataIni"
+        android:layout_below="@+id/editTextDataIni"
+        android:layout_marginTop="10dp"
+        android:text="Data Final"
+        android:textColor="@color/custocar"/>
+
+    <EditText
+        android:id="@+id/editTextDataFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewDataFinal"
+        android:layout_below="@+id/textViewDataFinal"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/custocar"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonCalFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextDataFinal"
+        android:layout_alignStart="@+id/imageButtonCalInicial"
+        android:background="@android:color/background_light"
+        app:srcCompat="@drawable/calendario" />
+
+    <TextView
+        android:id="@+id/textViewRelatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:elevation="1dp"
+        android:gravity="left"
+        android:text="Relatório"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

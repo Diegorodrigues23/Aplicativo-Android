@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.custocar.custocar.CadastrarVeiculoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarveiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:elevation="7dp"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/toolbartext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="Veículo"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <Spinner
+        android:id="@+id/spinnerFabricante"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/spinnerTipo"
+        android:layout_alignStart="@+id/textViewData"
+        android:layout_below="@+id/textViewFabricante"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/custocar"/>
+
+
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textViewTipo"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/custocar" />
+
+    <TextView
+        android:id="@+id/textViewTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/custocar"/>
+
+    <TextView
+        android:id="@+id/textViewFabricante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Fabricante"
+        android:layout_below="@+id/spinnerTipo"
+        android:layout_alignStart="@+id/spinnerTipo"
+        android:textColor="@color/custocar"/>
+
+    <Spinner
+        android:id="@+id/spinnerModelo"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textViewData"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/custocar"/>
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Modelo"
+        android:layout_below="@+id/spinnerFabricante"
+        android:layout_alignStart="@+id/textViewFabricante"
+        android:textColor="@color/custocar"/>
+
+    <EditText
+        android:id="@+id/editTextOndometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spinnerFabricante"
+        android:layout_alignStart="@+id/spinnerModelo"
+        android:layout_below="@+id/textViewOndometro"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/custocar" />
+
+    <TextView
+        android:id="@+id/textViewOndometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Ondômetro"
+        android:textColor="@color/custocar"
+        android:layout_below="@+id/spinnerModelo"
+        android:layout_alignStart="@+id/spinnerModelo" />
+
+    <TextView
+        android:id="@+id/textViewPlaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placa"
+        android:textColor="@color/custocar"
+        android:layout_below="@+id/editTextOndometro"
+        android:layout_alignStart="@+id/editTextOndometro" />
+
+    <EditText
+        android:id="@+id/editTextPlaca"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextOndometro"
+        android:layout_alignStart="@+id/editTextOndometro"
+        android:layout_below="@+id/textViewPlaca"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="ABC-1234"
+        android:inputType="textPersonName"
+        android:textColor="@color/custocar"
+        android:textColorHint="@color/custocar" />/>
+
+    <Button
+        android:id="@+id/buttonSalvarVeiculo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/custocar"
+        android:text="@string/salvar"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light" />
+
+
+</RelativeLayout>

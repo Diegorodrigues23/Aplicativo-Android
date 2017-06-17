@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.custocar.custocar.ImprevistosActivity">
+
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:text="Data:"
+        android:textColor="@color/custocar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewNota"
+        android:layout_alignStart="@+id/textViewNota"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textColor="@color/custocar" />
+
+    <TextView
+        android:id="@+id/textViewNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextNota"
+        android:layout_alignStart="@+id/textViewData"
+        android:layout_marginBottom="10dp"
+        android:text="Nota Fiscal:"
+        android:textColor="@color/custocar"/>
+
+    <EditText
+        android:id="@+id/editTextNota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewValor"
+        android:layout_alignStart="@+id/textViewValor"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/custocar" />
+
+    <TextView
+        android:id="@+id/textViewValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="Valor"
+        android:layout_above="@+id/editTextValor"
+        android:layout_alignStart="@+id/textViewNota"
+        android:textColor="@color/custocar"/>
+
+    <EditText
+        android:id="@+id/editTextValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextNota"
+        android:layout_alignStart="@+id/textViewCategoria"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:textColor="@color/custocar" />
+
+    <TextView
+        android:id="@+id/textViewCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewValor"
+        android:layout_below="@+id/editTextValor"
+        android:layout_marginTop="10dp"
+        android:text="Categoria"
+        android:textColor="@color/custocar" />
+
+    <Spinner
+        android:id="@+id/spinnerCategoria"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/editTextValor"
+        android:layout_alignStart="@+id/textViewCategoria"
+        android:layout_below="@+id/textViewCategoria"
+        android:layout_marginTop="10dp"
+        android:popupBackground="@android:color/background_light"
+        android:textColor="@color/custocar" />
+
+    <Button
+        android:id="@+id/buttonsalvarimpre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/custocar"
+        android:text="Salvar"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageViewCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/calendario"
+        android:textColor="@color/custocar"
+        android:layout_alignBottom="@+id/editTextData"
+        android:layout_alignEnd="@+id/editTextNota" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/textViewImprevistos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:gravity="left"
+        android:text="Imprevistos"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

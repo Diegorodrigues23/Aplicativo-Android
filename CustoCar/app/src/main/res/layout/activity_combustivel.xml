@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:layout_marginBottom="0dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginLeft="0dp"
+    tools:context="br.com.custocar.custocar.CombustivelActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:textColor="@color/custocar"
+        android:theme="?attr/actionBarTheme" />
+
+    <Button
+        android:id="@+id/button_salvar"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/custocar"
+        android:text="@string/salvar"
+        android:textColor="@android:color/background_light"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <ImageView
+        android:id="@+id/imageViewCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextData"
+        android:layout_marginStart="39dp"
+        android:layout_toEndOf="@+id/editTextData"
+        app:srcCompat="@drawable/calendario" />
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar4"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Data"
+        android:textColor="@color/custocar" />
+
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewData"
+        android:layout_below="@+id/textViewData"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textColor="@color/custocar" />
+
+    <TextView
+        android:id="@+id/textViewTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextData"
+        android:layout_below="@+id/imageViewCal"
+        android:layout_marginTop="5dp"
+        android:text="Tipo"
+        android:textColor="@color/custocar" />
+
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewTipo"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/custocar" />
+
+    <TextView
+        android:id="@+id/textViewQtd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/spinnerTipo"
+        android:layout_below="@+id/spinnerTipo"
+        android:layout_marginTop="17dp"
+        android:text="Quantidade"
+        android:textColor="@color/custocar" />
+
+    <EditText
+        android:id="@+id/editTextQtd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spinnerTipo"
+        android:layout_alignStart="@+id/textViewQtd"
+        android:layout_below="@+id/textViewQtd"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/custocar" />
+
+    <TextView
+        android:id="@+id/textViewValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextQtd"
+        android:layout_below="@+id/editTextQtd"
+        android:layout_marginTop="10dp"
+        android:text="Valor"
+        android:textColor="@color/custocar" />
+
+    <EditText
+        android:id="@+id/editTextValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextQtd"
+        android:layout_alignStart="@+id/textViewValor"
+        android:layout_below="@+id/textViewValor"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/custocar" />
+
+    <TextView
+        android:id="@+id/textViewCupom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextValor"
+        android:layout_below="@+id/editTextValor"
+        android:layout_marginTop="10dp"
+        android:text="Cupom"
+        android:textColor="@color/custocar" />
+
+    <EditText
+        android:id="@+id/editTextCupom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextValor"
+        android:layout_alignStart="@+id/textViewCupom"
+        android:layout_below="@+id/textViewCupom"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/custocar" />
+
+    <TextView
+        android:id="@+id/textViewKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextCupom"
+        android:layout_below="@+id/editTextCupom"
+        android:layout_marginTop="10dp"
+        android:text="Km Atual"
+        android:textColor="@color/custocar" />
+
+    <EditText
+        android:id="@+id/editTextKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextCupom"
+        android:layout_alignStart="@+id/textViewKm"
+        android:layout_below="@+id/textViewKm"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/custocar" />
+
+    <TextView
+        android:id="@+id/textViewCombustivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:gravity="left"
+        android:text="Combustível"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+</RelativeLayout>
